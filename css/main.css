@@ -1,16 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital@0;1&display=swap');
 
-#mainContent{
+:root{
+ --forBackground:#7f7f7f;
+ --toContrast:#8e8e8e;
+ --borderRed:1px red solid;
+ --borderYellow:1px yellow solid;
+}
+
+html{
+ font-size:18px;
+}
+
+body{
+ background-color: black;
+}
+
+/**************************************
+ALL CONTENT
+**************************************/
+
+#allContent{
  /* border:1px red solid; */
  margin: 25px 3px;
  border-radius: 5px;
- background-color: #f7dccb;
+ background-color: var(--forBackground);
  text-align:center;
  font-family: 'Philosopher', sans-serif;
- font-size:16px;
+}
+
+/**************************************
+MAIN
+**************************************/
+
+#main{
+ margin:1.5rem 1rem;
+ display:flex;
+ flex-direction: column;
 }
 
 #main h1{
+ display:flex;
+ align-self: row;
+ align-self: center;
+ position:relative;
  padding-top:25px;
- font-size: 3rem;
+ margin-bottom:0px;
+ font-size: 3.5rem;
+ text-shadow:0.5px 0.5px 10px white;
+ height:auto;
+}
+
+@media only screen and (max-width: 310px){
+ #main h1{
+ width:20%;
+ /* border:var(--borderRed); */
+ font-size: 2.5rem;
+ justify-content: center;
+ }
+}
+
+#main img{
+ display:flex;
+ width:12%;
+ align-self: center;
+ flex-direction: row;
+}
+
+#main h2{
+ align-self: center;
+ margin-bottom: 0.8rem;
+ margin-top:0;
+ font-size:1.5rem;
+}
+
+/**************************************
+IMAGE SECTION
+**************************************/
+#imageSection{
+ /* border: red solid 1px; */
+ max-width: 100%;
+ max-height: 100%;
+ border-radius:.5rem;
+ margin:0px 1.5rem;
+ background-color:var(--toContrast);
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#imageSection img{
+ /* border: green solid 1px; */
+ max-width:55%;
+ max-height:55%;
+ margin-top:2rem;
+ border-radius: 15px;
+}
+
+#imageSection p{
+ /* border: green solid 1px; */
+ padding: 1.2rem;
+ font-size:0.9rem;
+}
+
+/**************************************
+MILESTONES
+**************************************/
+
+#milestones{
+ /* border: 1px red solid; */
+ display:flex;
+ flex-direction:column;
+ /* position:relative; */
+ /* margin:1.5rem 15rem; */
+ 
+}
+
+#milestones h2{
+ display:flex; 
+ font-size:1.5rem;
+ justify-content:center;
+ /* border: yellow 1px solid; */
+ 
+}
+
+#milestones ul{
+ /* border:1px rgb(147, 236, 147) solid; */
+ flex-direction:column;
+ justify-content: center;
+ align-items: center;
+ align-self: center;
+ padding:0;
+ width: 65%;
+ display:flex;
+}
+
+#milestones ul li{
+ /* border:1px blue solid; */
+ align-items: center;
+ justify-content: center; 
+ text-align:justify;
+ padding:0.4rem 0.6rem;
+ margin-bottom: 0.6rem;
+ list-style: none;
+ border-left:8px solid var(--toContrast);
+ /* border-right:3px solid var(--toContrast); */
+ border-bottom:4px solid var(--toContrast);
+ border-radius: 6%;
+}
+
+/**************************************
+APPOINTMENT
+**************************************/
+
+#milestones #appointment{
+ /* border: red 1px solid; */
+ align-items: center;
+ flex-direction:column;
+ align-self: center;
+ padding:0.4rem 0;
+ width: 65%;
+ display:flex;
+ border-bottom:8px solid var(--toContrast);
+ border-top:4px solid var(--toContrast);
+ border-radius: 8%;
+}
+
+#milestones #appointment p{
+ /* border:green 1px solid; */
+ margin:0.5rem;
+}
+
+#milestones #appointment p:last-child{
+ /* border:red solid 1px; */
+ align-self:flex-start;
+ font-style: italic;
+}
+
+/**************************************
+CALL TO READ MORE
+**************************************/
+
+#callToReadMore{
+ margin-top: 1.1rem;
+ padding: 1.1rem;
+ font-size: 1.2rem;
+}
+
+#callToReadMore a{
+text-decoration: none;
+color:rgb(26, 26, 156);
+}
+
+/**************************************
+FOOTER
+**************************************/
+
+footer{
+ /* border:var(--borderRed); */
+ display:flex;
+ flex-direction: column;
+ align-self: flex-end;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ opacity: 0.7;
+}
+
+footer p{
+ /* border:var(--borderYellow); */
+ align-self:flex-end;
+ margin:0.2rem;
+ margin-right:0.8rem;
+}
+
+footer p a{
+ text-decoration: none;
+ color:rgb(26, 26, 156);
+}
+
+footer p a:hover{
+ text-transform:uppercase;
 }
