@@ -9,6 +9,7 @@
 
 html{
  font-size:18px;
+ color:#F2F2F2;
 }
 
 body{
@@ -38,7 +39,7 @@ MAIN
  flex-direction: column;
 }
 
-#main h1{
+#title{
  display:flex;
  align-self: row;
  align-self: center;
@@ -46,12 +47,12 @@ MAIN
  padding-top:25px;
  margin-bottom:0px;
  font-size: 3.5rem;
- text-shadow:0.5px 0.5px 10px white;
+ text-shadow:0.8px 0.8px 10px #f4f4f4;
  height:auto;
 }
 
 @media only screen and (max-width: 310px){
- #main h1{
+ #title{
  width:20%;
  /* border:var(--borderRed); */
  font-size: 2.5rem;
@@ -74,19 +75,23 @@ MAIN
 }
 
 /**************************************
-IMAGE SECTION
+IMG-DIV
 **************************************/
-#imageSection{
+#img-div{
  /* border: red solid 1px; */
  max-width: 100%;
  max-height: 100%;
+ display:flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
  border-radius:.5rem;
  margin:0px 1.5rem;
  background-color:var(--toContrast);
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#imageSection img{
+#image{
  /* border: green solid 1px; */
  max-width:55%;
  max-height:55%;
@@ -94,17 +99,17 @@ IMAGE SECTION
  border-radius: 15px;
 }
 
-#imageSection p{
+#img-caption{
  /* border: green solid 1px; */
  padding: 1.2rem;
  font-size:0.9rem;
 }
 
 /**************************************
-MILESTONES
+TRIBUTE INFO
 **************************************/
 
-#milestones{
+#tribute-info{
  /* border: 1px red solid; */
  display:flex;
  flex-direction:column;
@@ -113,7 +118,7 @@ MILESTONES
  
 }
 
-#milestones h2{
+#tribute-info h2{
  display:flex; 
  font-size:1.5rem;
  justify-content:center;
@@ -121,7 +126,7 @@ MILESTONES
  
 }
 
-#milestones ul{
+#tribute-info ul{
  /* border:1px rgb(147, 236, 147) solid; */
  flex-direction:column;
  justify-content: center;
@@ -132,7 +137,7 @@ MILESTONES
  display:flex;
 }
 
-#milestones ul li{
+#tribute-info ul li{
  /* border:1px blue solid; */
  align-items: center;
  justify-content: center; 
@@ -150,7 +155,7 @@ MILESTONES
 APPOINTMENT
 **************************************/
 
-#milestones #appointment{
+#tribute-info #appointment{
  /* border: red 1px solid; */
  align-items: center;
  flex-direction:column;
@@ -163,12 +168,12 @@ APPOINTMENT
  border-radius: 8%;
 }
 
-#milestones #appointment p{
+#tribute-info #appointment p{
  /* border:green 1px solid; */
  margin:0.5rem;
 }
 
-#milestones #appointment p:last-child{
+#tribute-info #appointment p:last-child{
  /* border:red solid 1px; */
  align-self:flex-start;
  font-style: italic;
@@ -185,8 +190,16 @@ CALL TO READ MORE
 }
 
 #callToReadMore a{
-text-decoration: none;
 color:rgb(26, 26, 156);
+}
+
+#callToReadMore a:hover{
+text-transform: uppercase;
+}
+
+#callToReadMore a:focus{
+color:white;
+text-transform: uppercase;
 }
 
 /**************************************
@@ -200,6 +213,7 @@ footer{
  align-self: flex-end;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  opacity: 0.7;
+ background-color:#BABABA;
 }
 
 footer p{
@@ -207,13 +221,17 @@ footer p{
  align-self:flex-end;
  margin:0.2rem;
  margin-right:0.8rem;
+ color:black;
 }
 
 footer p a{
- text-decoration: none;
  color:rgb(26, 26, 156);
 }
 
 footer p a:hover{
  text-transform:uppercase;
+}
+
+footer p a:focus{
+ color:white;
 }
