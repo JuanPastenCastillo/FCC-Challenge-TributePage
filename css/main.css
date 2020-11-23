@@ -8,7 +8,7 @@
 }
 
 html{
- font-size:18px;
+ font-size:24px;
  color:#F2F2F2;
 }
 
@@ -105,7 +105,29 @@ IMG-DIV
  /* border: green solid 1px; */
  padding: 1.2rem;
  font-size:0.9rem;
+ text-align: justify;
+ line-height: 1.25rem;
 }
+
+#img-caption i{
+ display:none;
+}
+
+#img-caption a:hover i{
+ cursor:pointer;
+ display:inline-block;
+}
+
+#img-caption a::after{
+ content:"\A";
+ white-space:pre;
+}
+
+#img-caption span{
+ text-indent:100px;
+ /* border:var(--borderYellow); */
+}
+
 
 /**************************************
 TRIBUTE INFO
@@ -137,7 +159,7 @@ TRIBUTE INFO
  align-items: center;
  align-self: center;
  padding:0;
- width: 65%;
+ width: 45%;
  display:flex;
 }
 
@@ -153,10 +175,15 @@ TRIBUTE INFO
  /* border-right:3px solid var(--toContrast); */
  border-bottom:4px solid var(--toContrast);
  border-radius: 6%;
+ width:100%;
+}
+
+#tribute-info ul span{
+ font-weight: 700;
 }
 
 /**************************************
-APPOINTMENT
+TRIBUTE-INFO APPOINTMENT
 **************************************/
 
 #tribute-info #appointment{
@@ -165,16 +192,17 @@ APPOINTMENT
  flex-direction:column;
  align-self: center;
  padding:0.4rem 0;
- width: 65%;
+ width: 40%;
  display:flex;
  border-bottom:8px solid var(--toContrast);
  border-top:4px solid var(--toContrast);
  border-radius: 8%;
 }
 
-#tribute-info #appointment p{
+#tribute-info #appointment p:first-child{
  /* border:green 1px solid; */
  margin:0.5rem;
+ width:100%;
 }
 
 #tribute-info #appointment p:last-child{
@@ -206,12 +234,7 @@ CALL TO READ MORE
  display:inline-block;
 }
 
-#callToReadMore a:focus i{
- cursor:pointer;
- display:inline-block;
-}
-
-#tribute-link{
+.externalLink{
  /* border:var(--borderRed); */
  padding-top:2rem;
  color: #00008b;
@@ -221,20 +244,21 @@ CALL TO READ MORE
 }
 
 
-#tribute-link:hover{
+.externalLink:hover{
  text-transform: uppercase;
  color:#1313a9;
  border-bottom:none;
  }
 
-#tribute-link:focus{
+.externalLink:focus{
 text-transform: uppercase;
 color:white;
 border-bottom:none;
-background-color:#1313a9;
+background-color:rgb(55, 46, 46);
+border-radius: 5px;
 }
 
-#tribute-link:visited{
+.externalLink:visited{
  color:white;
  border-bottom:none;
 }
@@ -254,7 +278,7 @@ footer{
  opacity: 0.7;
  background-color:#BABABA;
  border-radius: 5px;
- 
+ font-family: monospace; 
 }
 
 footer p{
