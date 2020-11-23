@@ -174,7 +174,8 @@ TRIBUTE INFO
  border-left:8px solid var(--toContrast);
  /* border-right:3px solid var(--toContrast); */
  border-bottom:4px solid var(--toContrast);
- border-radius: 6%;
+ border-radius: 20px;
+ border-bottom-left-radius: 10px;
  width:100%;
 }
 
