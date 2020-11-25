@@ -9,6 +9,9 @@
 
 html{
  font-size:24px;
+ word-spacing:0.16rem;
+ letter-spacing: 0.12rem;
+ line-height: 2.0rem;
  color:#F2F2F2;
 }
 
@@ -61,7 +64,7 @@ MAIN
 
 #main img{
  display:flex;
- width:12%;
+ width:17%;
  align-self: center;
  flex-direction: row;
 }
@@ -70,7 +73,7 @@ MAIN
  align-self: center;
  margin-bottom: 0.8rem;
  margin-top:0;
- font-size:1.5rem;
+ font-size:1.8rem;
 }
 
 /**************************************
@@ -96,16 +99,17 @@ IMG-DIV
  /* border: green solid 1px; */
  max-width:55%;
  max-height:55%;
- margin-top:2rem;
+ margin-top:1.1rem;
  border-radius: 15px;
 }
 
 #img-caption{
  /* border: green solid 1px; */
- padding: 1.2rem;
- font-size:0.9rem;
- text-align: justify;
- line-height: 1.25rem;
+ padding: 0rem 1.2rem;
+ width:70%;
+ font-size:1.4rem;
+ text-align: left;
+ color:white;
 }
 
 #img-caption i{
@@ -143,7 +147,7 @@ TRIBUTE INFO
 
 #tribute-info h2{
  display:flex; 
- font-size:1.5rem;
+ font-size:1.8rem;
  justify-content:center;
  margin-bottom: 0;
  margin-top: 40px;
@@ -167,8 +171,9 @@ TRIBUTE INFO
  align-items: center;
  justify-content: center; 
  text-align:justify;
+ font-size:1.4rem;
  padding:0.4rem 0.6rem;
- margin-bottom: 0.6rem;
+ margin: 0.8rem 0;
  list-style: none;
  border-left:8px solid var(--toContrast);
  /* border-right:3px solid var(--toContrast); */
@@ -203,12 +208,15 @@ TRIBUTE-INFO APPOINTMENT
  /* border:green 1px solid; */
  margin:0.5rem;
  width:100%;
+ font-size: 1.4rem;
 }
 
 #tribute-info #appointment p:last-child{
  /* border:red solid 1px; */
  align-self:flex-start;
  font-style: italic;
+ font-weight: 700;
+ font-size: 1.4rem;
 }
 
 /**************************************
@@ -218,7 +226,7 @@ CALL TO READ MORE
 #callToReadMore{
  margin-top: 1.1rem;
  padding: 1.1rem;
- font-size: 1.2rem;
+ font-size: 1.4rem;
 }
 
 #callToReadMore p{
