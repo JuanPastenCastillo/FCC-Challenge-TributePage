@@ -41,7 +41,6 @@ MAIN
 
 #title{
  display:flex;
- align-self:row;
  align-self:center;
  position:relative;
  padding-top:25px;
