@@ -19,9 +19,9 @@ body{
  background-color: black;
 }
 
-/**************************************
-CONTAINER OF ALL THE SECTIONS
-**************************************/
+/* ___________________________________ 
+THE CONTAINER OF ALL THE SECTIONS
+ ___________________________________ */
 
 #containerOfAllTheSections{
  /* border:1px red solid; */
@@ -32,9 +32,9 @@ CONTAINER OF ALL THE SECTIONS
  font-family: 'Philosopher', sans-serif;
 }
 
-/**************************************
+/* ___________________________________ 
 MAIN
-**************************************/
+ ___________________________________ */
 
 #main{
  margin:1.5rem 1rem;
@@ -76,9 +76,9 @@ MAIN
  font-size:1.8rem;
 }
 
-/**************************************
+/* ___________________________________ 
 IMG-DIV
-**************************************/
+ ___________________________________ */
 #img-div{
  /* border: red solid 1px; */
  max-width: 100%;
@@ -132,9 +132,9 @@ IMG-DIV
 }
 
 
-/**************************************
+/* ___________________________________ 
 TRIBUTE INFO
-**************************************/
+ ___________________________________ */
 
 #tribute-info{
  /* border: 1px red solid; */
@@ -187,9 +187,9 @@ TRIBUTE INFO
  font-weight: 700;
 }
 
-/**************************************
+/* ___________________________________ 
 TRIBUTE-INFO APPOINTMENT
-**************************************/
+ ___________________________________ */
 
 #tribute-info #appointment{
  /* border: red 1px solid; */
@@ -219,9 +219,9 @@ TRIBUTE-INFO APPOINTMENT
  font-size: 1.4rem;
 }
 
-/**************************************
+/* ___________________________________ 
 CALL TO READ MORE
-**************************************/
+ ___________________________________ */
 
 #callToReadMore{
  margin-top: 1.1rem;
@@ -262,7 +262,7 @@ CALL TO READ MORE
 text-transform: uppercase;
 color:white;
 border-bottom:none;
-background-color:rgb(55, 46, 46);
+opacity: 0.8;
 border-radius: 5px;
 }
 
@@ -272,9 +272,9 @@ border-radius: 5px;
 }
 
 
-/**************************************
+/* ___________________________________ 
 FOOTER
-**************************************/
+ ___________________________________ */
 
 footer{
  /* border:var(--borderRed); */
