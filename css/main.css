@@ -8,7 +8,7 @@
 }
 
 html{
- font-size:24px;
+ font-size:1.6rem;
  word-spacing:0.16rem;
  letter-spacing: 0.12rem;
  line-height: 2.0rem;
@@ -17,6 +17,7 @@ html{
 
 body{
  background-color: black;
+ margin:0;
 }
 
 /* ___________________________________ 
@@ -127,7 +128,7 @@ IMG-DIV
 }
 
 #img-caption span{
- text-indent:100px;
+ word-wrap: break-word;
  /* border:var(--borderYellow); */
 }
 
@@ -307,4 +308,34 @@ footer p a:hover{
 
 footer p a:focus{
  color:white;
+}
+
+@media only screen and (max-width: 799px){
+ html{
+  font-size:1.2rem;
+ }
+ img-caption{
+  width:92%;
+ }
+ #tribute-info ul{
+  width: 72%;
+ }
+ #tribute-info #appointment{
+  width: 90%;
+ }
+}
+
+@media only screen and (max-width: 399px){
+ html{
+  font-size:0.7rem;
+ }
+ img-caption{
+  width:92%;
+ }
+ #tribute-info ul{
+  width: 72%;
+ }
+ #tribute-info #appointment{
+  width: 90%;
+ }
 }
