@@ -127,7 +127,7 @@ IMG-DIV
  white-space:pre;
 }
 
-#img-caption span{
+#img-caption strong{
  word-wrap: break-word;
  /* border:var(--borderYellow); */
 }
@@ -184,7 +184,7 @@ TRIBUTE INFO
  width:100%;
 }
 
-#tribute-info ul span{
+#tribute-info ul strong{
  font-weight: 700;
 }
 
@@ -205,14 +205,14 @@ TRIBUTE-INFO APPOINTMENT
  border-radius: 8%;
 }
 
-#tribute-info #appointment p:first-child{
+#tribute-info #appointment cite{
  /* border:green 1px solid; */
  margin:0.5rem;
  width:100%;
  font-size: 1.4rem;
 }
 
-#tribute-info #appointment p:last-child{
+#tribute-info #appointment q{
  /* border:red solid 1px; */
  align-self:flex-start;
  font-style: italic;
@@ -290,23 +290,24 @@ footer{
  font-family: monospace; 
 }
 
-footer p{
+footer p, address{
  /* border:var(--borderYellow); */
  align-self:flex-end;
  margin:0.2rem;
  margin-right:0.8rem;
  color:black;
+ font-style: normal;
 }
 
-footer p a{
+footer address a{
  color:rgb(26, 26, 156);
 }
 
-footer p a:hover{
+footer address a:hover{
  text-transform:uppercase;
 }
 
-footer p a:focus{
+footer address a:focus{
  color:white;
 }
 
